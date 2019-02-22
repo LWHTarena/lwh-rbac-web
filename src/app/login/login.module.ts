@@ -8,11 +8,15 @@ import { RegisterComponent } from './register/register.component';
         LoginComponent,
         RegisterComponent
     ],
-    imports: [ CommonModule ],
+    imports: [
+        CommonModule,
+        LoginModule
+    ],
     exports: [
         LoginComponent,
         RegisterComponent
     ],
     providers: [],
 })
-export class LoginModule {}
+export class LoginModule {
+}

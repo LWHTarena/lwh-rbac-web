@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
-import { CommonsModule } from './common/common.module';
 import { BackRoutingModule } from './back/backRouter.module';
+import { FrontModule } from './front/front.module';
+import { CoreModule } from './core/Core.module';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,12 @@ import { BackRoutingModule } from './back/backRouter.module';
   ],
   imports: [
     BrowserModule,
-    CommonsModule,
+    CoreModule,
     BackRoutingModule,
     FrontModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, IndexComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
