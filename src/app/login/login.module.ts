@@ -10,7 +10,6 @@ import { RegisterComponent } from './register/register.component';
     ],
     imports: [
         CommonModule,
-        LoginModule
     ],
     exports: [
         LoginComponent,

@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { BackRoutingModule } from './back/backRouter.module';
 import { FrontModule } from './front/front.module';
-import { CoreModule } from './core/Core.module';
+import { LoginModule } from './login/login.module';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CoreModule } from './core/Core.module';
   ],
   imports: [
     BrowserModule,
-    CoreModule,
+    LoginModule,
     BackRoutingModule,
     FrontModule,
     AppRoutingModule

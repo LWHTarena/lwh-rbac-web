@@ -8,15 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
     constructor() { }
 
-    onSubmit({value, valid}, e: Event) {
-        // console.log(value, valid);
-        // e.preventDefault();
-        // if (!valid) {
-        //     return;
-        // }
-        // this.store$.dispatch(
-        //     new actions.RegisterAction(value));
-    }
 
     ngOnInit(): void { }
 }
