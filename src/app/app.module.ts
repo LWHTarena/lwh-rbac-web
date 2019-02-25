@@ -8,7 +8,7 @@ import { BackRoutingModule } from './back/backRouter.module';
 import { FrontModule } from './front/front.module';
 import { LoginModule } from './login/login.module';
 import { CoreModule } from './core/core.module';
-
+import { ElModule } from 'element-angular';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,8 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
+    /** 将 element-angular 引入根模块后，可以在任意组件中使用 **/
+    ElModule.forRoot(),
     CoreModule,
     LoginModule,
     BackRoutingModule,
