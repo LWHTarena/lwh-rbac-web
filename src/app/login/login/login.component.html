@@ -1,30 +1,26 @@
-<form class="form-signin needs-validation" role="form" novalidate>
-  <h2 class="form-signin-heading"><i class="fa fa-user-circle-o" aria-hidden="true"></i>用户登录</h2>
-    <div class="form-group has-success has-feedback">
-      <input type="text" class="form-control" id="inputSuccess4" placeholder="请输入登录账号" autofocus>
-      <span class="fa fa-user form-control-feedback"></span>
-    </div>
-    <div class="form-group has-success has-feedback">
-      <input type="text" class="form-control" id="inputSuccess4" placeholder="请输入登录密码" style="margin-top:10px;">
-      <span class="fa fa-unlock-alt form-control-feedback" aria-hidden="true"></span>
-    </div>
-    <div class="form-group has-success has-feedback">
-      <select class="form-control" >
-          <option value="member">会员</option>
-          <option value="user">管理</option>
-      </select>
-    </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" value="remember-me"> 记住我
-    </label>
-    <br>
-    <label>
-      忘记密码
-    </label>
-    <label style="float:right">
-      <a href="reg.html">我要注册</a>
-    </label>
+<form >
+  <div class="container">
+    <h2 class="form-signin-heading"><i class="material-icons">person</i> 用户登录</h2>
+    
+    <mat-form-field class="login-full-width">
+      <input matInput type="text" placeholder="请输入登录账号">
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field class="login-full-width">
+      <input matInput type="text" placeholder="请输入登录密码">
+      <mat-icon matSuffix>vpn_key</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="">
+          <mat-option *ngFor="let t of types" [value]="t.value">
+            {{t.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-checkbox>记住我</mat-checkbox>
+    
+    <a href="" mat-button>忘记密码</a>
+    <a href="" mat-button>我要注册</a>
+
   </div>
-  <a class="btn btn-lg btn-success btn-block" onclick="dologin()" > 登录</a>
 </form>

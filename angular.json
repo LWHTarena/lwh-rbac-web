@@ -28,7 +28,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "../node_modules/element-angular/theme/index.css"
             ],
             "scripts": []
           },
@@ -84,8 +83,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss",
-              "../node_modules/element-angular/theme/index.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [

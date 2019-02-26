@@ -7,6 +7,5 @@ import { CommonModule } from '@angular/common';
     exports: [],
     providers: [],
 })
-export class backModule {
-    
+export class BackModule {
 }

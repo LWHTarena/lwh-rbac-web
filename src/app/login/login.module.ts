@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CoreModule } from '../core/core.module';
 import { LoginRoutingModule } from './login-router.module';
+import { SharedeModule } from '../shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -12,6 +13,7 @@ import { LoginRoutingModule } from './login-router.module';
     ],
     imports: [
         CommonModule,
+        SharedeModule,
         CoreModule,
         LoginRoutingModule
     ],
