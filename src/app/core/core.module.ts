@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavComponent } from './nav/nav.component';
 import { SharedeModule } from '../shared/shared.module';
+import { NavComponent } from './nav/nav.component';
+
 @NgModule({
     declarations: [
-        NavComponent
+        NavComponent,
     ],
     imports: [
         CommonModule,
         SharedeModule,
      ],
     exports: [
-        NavComponent
+        NavComponent,
     ],
     providers: [],
 })

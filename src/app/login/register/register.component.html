@@ -1,0 +1,32 @@
+<form >
+    <div class="container">
+      <h2 class="form-signin-heading"><i class="material-icons">how_to_reg</i> 用户登录</h2>
+      
+      <mat-form-field class="login-full-width">
+        <input matInput type="text" placeholder="请输入登录账号">
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput type="text" placeholder="请输入登录密码">
+        <mat-icon matSuffix>vpn_key</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="login-full-width">
+        <input matInput type="text" placeholder="请输入邮箱地址">
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-select placeholder="">
+            <mat-option *ngFor="let t of types" [value]="t.value">
+              {{t.viewValue}}
+            </mat-option>
+          </mat-select>
+      </mat-form-field>
+      <div>
+        <a href="" mat-button class="left">忘记密码</a>
+        <a href="/login" mat-button class="right">我有账号</a>
+      </div>
+  
+      <button mat-button (click)="onClick" color="primary">注册</button>
+    
+    </div>
+  </form>

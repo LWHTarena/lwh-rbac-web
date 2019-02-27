@@ -9,6 +9,7 @@ import { FrontModule } from './front/front.module';
 import { LoginModule } from './login/login.module';
 import { CoreModule } from './core/core.module';
 import { SharedeModule } from './shared/shared.module';
+import { BackModule } from './back/back.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,8 @@ import { SharedeModule } from './shared/shared.module';
     SharedeModule,
     CoreModule,
     LoginModule,
-    BackRoutingModule,
     FrontModule,
+    BackModule,
     AppRoutingModule
   ],
   providers: [],

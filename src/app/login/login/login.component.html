@@ -18,9 +18,14 @@
         </mat-select>
     </mat-form-field>
     <mat-checkbox>记住我</mat-checkbox>
-    
-    <a href="" mat-button>忘记密码</a>
-    <a href="" mat-button>我要注册</a>
 
+
+    <div>
+      <a href="" mat-button class="left">忘记密码</a>
+      <a href="/register" mat-button class="right">要注册</a>
+    </div>
+
+    <button mat-button (click)="onClick" color="primary">登录</button>
+  
   </div>
 </form>
