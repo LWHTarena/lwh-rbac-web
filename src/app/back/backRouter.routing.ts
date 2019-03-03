@@ -1,10 +1,14 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BackComponent } from './back.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
-    {path: 'back', component: BackComponent},
-    // {path: 'register', component: RegisterComponent}
+    {path: 'back', component: LayoutComponent,
+       children: [
+           {path: '', component: BackComponent},
+       ]
+    }
 ];
 
 @NgModule({

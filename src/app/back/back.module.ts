@@ -1,28 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoreModule } from '../core/core.module';
 import { SharedeModule } from '../shared/shared.module';
 import { BackComponent } from './back.component';
-import { BackRoutingModule } from './backRouter.module';
 import { MenuComponent } from './menu/menu.component';
-import { ContainComponent } from './contain/contain.component';
+import { LayoutComponent } from './layout/layout.component';
+import { MenuCollapseComponent } from './menu/collapse/menu-collapse.component';
+import { MenuItemComponent } from './menu/item/menu-item.component';
+import { BackRoutingModule } from './backRouter.routing';
 
 @NgModule({
     declarations: [
         BackComponent,
         MenuComponent,
-        ContainComponent,
+        MenuCollapseComponent,
+        MenuItemComponent,
+        LayoutComponent,
+
     ],
     imports: [
         CommonModule,
-        CoreModule,
         SharedeModule,
         BackRoutingModule
      ],
     exports: [
         BackComponent,
         MenuComponent,
-        ContainComponent,
+        MenuCollapseComponent,
+        MenuItemComponent,
+        LayoutComponent,
     ],
     providers: [],
 })

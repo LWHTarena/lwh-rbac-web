@@ -1,4 +1,4 @@
-<mat-card class="card">
+<!-- <mat-card class="card">
     <mat-card-content>
         <mat-nav-list dense>
             <h2 matSubheader><i class="fa fa-tachometer" aria-hidden="true"></i>控制面板</h2>
@@ -26,5 +26,24 @@
             </mat-list-item>
             <h2 matSubheader><i class="fa fa-table" aria-hidden="true"></i>参数管理</h2>
         </mat-nav-list>
+    </mat-card-content>
+</mat-card> -->
+
+<mat-card class="card">
+    <mat-card-content>
+        <div class="container">
+            <perfect-scrollbar>
+                <ng-container *ngFor="let it of menuModel">
+                    <app-back-menu-collapse *ngIf="it.type =='collapse'" [item]="it"></app-back-menu-collapse>
+                    <app-back-menu-item *ngIf="it.type =='item'" [item]="it"></app-back-menu-item>
+                </ng-container>
+            </perfect-scrollbar>
+        </div>
+        <div class="menu-footer">
+            <a matRipple href="#" target="black">
+                <mat-icon class="mat-18">help</mat-icon>
+                帮助与支持
+            </a>
+        </div>
     </mat-card-content>
 </mat-card>

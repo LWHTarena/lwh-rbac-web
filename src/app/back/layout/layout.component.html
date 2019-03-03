@@ -1,0 +1,11 @@
+<mat-sidenav-container>
+    <mat-sidenav class="sidenav" mode="side" align="start" opened>
+        <app-back-menu [menuModel]="menuModel"></app-back-menu>
+    </mat-sidenav>
+    <!-- Body -->
+
+    <mat-sidenav-content>
+        <<router-outlet></router-outlet>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

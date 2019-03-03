@@ -1,0 +1,13 @@
+<a href="" matRipple class="navigation-link">
+    <i class="{{item.icon}}" aria-hidden="true"></i>
+    <span>{{item.title}}</span>
+
+</a>
+
+<div class="navigation-children" >
+    <ng-container *ngFor="let item of item.children">
+        <app-back-menu-item *ngIf="it.type=='item'" [item]="item"></app-back-menu-item>
+        <app-back-menu-collapse *ngIf="it.type=='collapse'" [item]="item"></app-back-menu-collapse>
+    </ng-container>
+    
+</div>
