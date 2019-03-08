@@ -4,6 +4,7 @@ import { BackComponent } from './back.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
+    {path: '', component: BackComponent},
     {path: 'back', component: LayoutComponent,
        children: [
            {path: '', component: BackComponent},

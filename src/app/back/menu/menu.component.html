@@ -32,12 +32,12 @@
 <mat-card class="card">
     <mat-card-content>
         <div class="container">
-            <perfect-scrollbar>
+            <!-- <perfect-scrollbar> -->
                 <ng-container *ngFor="let it of menuModel">
                     <app-back-menu-collapse *ngIf="it.type =='collapse'" [item]="it"></app-back-menu-collapse>
                     <app-back-menu-item *ngIf="it.type =='item'" [item]="it"></app-back-menu-item>
                 </ng-container>
-            </perfect-scrollbar>
+            <!-- </perfect-scrollbar> -->
         </div>
         <div class="menu-footer">
             <a matRipple href="#" target="black">
