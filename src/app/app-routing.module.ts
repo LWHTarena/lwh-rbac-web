@@ -6,8 +6,8 @@ const routes: Routes = [
   {path: '', redirectTo: 'main/index', pathMatch: 'full'},
   {path: '', component: MainComponent,
     children: [
-      {path: 'main' , loadChildren: './main/main.module#MainModule'},
-      {path: 'back' , loadChildren: './back/back.module#BackModule'}
+      {path: 'main' , loadChildren: './main/main.module#MainModule'}
+      // {path: 'back' , loadChildren: './back/back.module#BackModule'},
     ]
   },
   {path: 'login', redirectTo: '/login'},

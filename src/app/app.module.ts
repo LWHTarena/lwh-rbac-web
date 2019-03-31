@@ -20,6 +20,7 @@ import { BackModule } from './back/back.module';
     LoginModule,
     FrontModule,
     BackModule,
+
     AppRoutingModule
   ],
   providers: [],
